@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuadro Sinóptico - Educación Física</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+        background: #fffdf5;
+        margin: 0;
+        padding: 50px 25px;
+        color: #2d3436;
+        position: relative;
+        overflow-x: auto;
+    }
+    /* ---- Manchas decorativas de fondo ---- */
+    .deco { position: absolute; z-index: 0; pointer-events: none; }
+    .b1 { top: -90px; left: -70px; width: 240px; height: 210px; background: #ffe08a; border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; }
+    .b2 { bottom: -80px; left: -60px; width: 220px; height: 200px; background: #ffb6c8; border-radius: 15px 225px 15px 255px/225px 15px 255px 15px; }
+    .b3 { top: -70px; right: -50px; width: 190px; height: 170px; background: #aeeaf7; border-radius: 225px 15px 255px 15px/15px 255px 15px 225px; }
+    .b4 { bottom: -70px; right: -60px; width: 210px; height: 190px; background: #d5b8f5; border-radius: 15px 255px 15px 225px/255px 15px 225px 15px; }
+    .rayita { position: absolute; z-index: 0; pointer-events: none; }
+    .puntos { position: absolute; z-index: 0; width: 110px; height: 75px; background-image: radial-gradient(#2d3436 2px, transparent 2px); background-size: 17px 17px; opacity: .45; pointer-events: none; }
+
+    /* ---- Estructura general ---- */
+    .page { position: relative; z-index: 1; max-width: 1220px; margin: 0 auto; display: flex; gap: 25px; align-items: flex-start; }
+
+    /* ---- Columna del título ---- */
+    .titulo { width: 235px; flex-shrink: 0; text-align: center; align-self: center; }
+    .titulo .emojis { font-size: 26px; letter-spacing: 8px; }
+    .titulo h1 { font-size: 42px; margin: 12px 0; line-height: 1.05; }
+    .titulo .sub { font-size: 16px; font-weight: bold; color: #e84393; margin: 0 0 12px; }
+    .titulo .desc { font-size: 13px; line-height: 1.65; margin: 0; }
+
+    /* ---- Filas (ramas) ---- */
+    .rows { flex: 1; display: flex; flex-direction: column; gap: 48px; padding-top: 10px; }
+    .row { display: flex; align-items: center; gap: 12px; }
+
+    /* ---- Burbujas orgánicas ---- */
+    .blob {
+        border: 3px solid #2d3436;
+        border-radius: 225px 15px 225px 15px/15px 225px 15px 255px;
+        box-shadow: 5px 5px 0 #2d3436;
+        padding: 18px 20px;
+    }
+    .idea { width: 205px; flex-shrink: 0; text-align: center; font-weight: bold; font-size: 17px; }
+    .idea small { display: block; font-weight: normal; font-size: 12px; margin-top: 8px; line-height: 1.45; }
+    .rosa { background: #ffb6c8; }
+    .lila { background: #d5b8f5; }
+    .cielo { background: #aeeaf7; }
+
+    .detalle { display: flex; flex-direction: column; gap: 14px; }
+    .mini { width: 330px; font-size: 12.5px; line-height: 1.5; }
+    .label { display: block; font-weight: bold; font-size: 13.5px; margin-bottom: 6px; }
+    .lbl-rosa { color: #e84393; }
+    .lbl-lila { color: #8e44ad; }
+    .lbl-oro { color: #d68910; }
+
+    .ejemplos { width: 175px; flex-shrink: 0; font-size: 12.5px; line-height: 1.5; text-align: center; }
+
+    /* ---- Llaves curvas SVG ---- */
+    .llave { flex-shrink: 0; align-self: stretch; display: flex; align-items: center; }
+</style>
+</head>
+<body>
+
+<!-- Decoraciones de fondo -->
+<div class="deco b1"></div>
+<div class="deco b2"></div>
+<div class="deco b3"></div>
+<div class="deco b4"></div>
+<svg class="rayita" style="top:18px; left:16%;" width="150" height="42">
+    <path d="M5 27 Q 27 3 48 22 T 92 22 T 138 22" stroke="#2d3436" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
+<svg class="rayita" style="bottom:26px; right:22%;" width="90" height="36">
+    <path d="M45 3 L50 14 L61 16 L50 19 L45 30 L40 19 L29 16 L40 14 Z" fill="#2d3436"/>
+</svg>
+<div class="puntos" style="bottom:18px; left:42%;"></div>
+<div class="puntos" style="top:24px; right:6%;"></div>
+
+<div class="page">
+    <!-- ======== TÍTULO ======== -->
+    <div class="titulo">
+        <div class="emojis">✌️ ✋</div>
+        <h1>Cuadro<br>Sinóptico</h1>
+        <p class="sub">Importancia de la Educación Física</p>
+        <p class="desc">Pilar fundamental del proceso educativo que estimula el desarrollo integral del cuerpo y la mente. Fomenta salud óptima, integración social, sana competitividad, y actúa como herramienta para fines terapéuticos y recreativos.</p>
+    </div>
+
+    <!-- ======== RAMAS ======== -->
+    <div class="rows">
+
+        <!-- Fila 1 -->
+        <div class="row">
+            <div class="blob idea rosa">
+                1. Desarrollo Integral y Efectos
+                <small>La Educación Física transforma el cuerpo y la mente de forma completa.</small>
+            </div>
+            <div class="llave">
+                <svg width="26" height="100%" preserveAspectRatio="none" viewBox="0 0 26 100">
+                    <path d="M3 2 C 16 2 16 43 23 50 C 16 57 16 98 3 98" stroke="#2d3436" stroke-width="2.5" fill="none"/>
+                </svg>
+            </div>
+            <div class="detalle">
+                <div class="blob mini" style="background:#ffd6e7;">
+                    <span class="label lbl-rosa">Definición</span>
+                    Ayuda a que la persona evolucione en todas sus capacidades: físicas, intelectuales, sociales y afectivas.
+                </div>
+                <div class="blob mini" style="background:#e8d5ff;">
+                    <span class="label lbl-lila">Características</span>
+                    <strong>Cardiovascular:</strong> el ejercicio aeróbico fortalece el corazón, baja la frecuencia en reposo y disminuye la tensión arterial.<br>
+                    <strong>Respiratorio:</strong> hace la respiración más eficiente, aumenta la oxigenación y mejora la capacidad pulmonar.
+                </div>
+            </div>
+            <div class="llave">
+                <svg width="26" height="100%" preserveAspectRatio="none" viewBox="0 0 26 100">
+                    <path d="M3 2 C 16 2 16 43 23 50 C 16 57 16 98 3 98" stroke="#2d3436" stroke-width="2.5" fill="none"/>
+                </svg>
+            </div>
+            <div class="blob ejemplos" style="background:#fff3b0;">
+                <span class="label lbl-oro">Ejemplos</span>
+                Correr, caminar o nadar de forma regular.<br>
+                Juegos colectivos y circuitos de estaciones.
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="row">
+            <div class="blob idea lila">
+                2. Ejercicios Cardiovasculares
+                <small>Rutinas que ponen a trabajar fuerte al corazón y a los pulmones.</small>
+            </div>
+            <div class="llave">
+                <svg width="26" height="100%" preserveAspectRatio="none" viewBox="0 0 26 100">
+                    <path d="M3 2 C 16 2 16 43 23 50 C 16 57 16 98 3 98" stroke="#2d3436" stroke-width="2.5" fill="none"/>
+                </svg>
+            </div>
+            <div class="detalle">
+                <div class="blob mini" style="background:#cdeeff;">
+                    <span class="label lbl-lila">Definición</span>
+                    Rutinas para mejorar la resistencia y trabajar a fondo el sistema cardíaco, respiratorio y circulatorio.
+                </div>
+                <div class="blob mini" style="background:#d9f7e3;">
+                    <span class="label lbl-rosa">Características</span>
+                    <strong>Caminar / Bicicleta:</strong> ejercicios de bajo impacto que mejoran el estado físico, la fuerza de piernas y el equilibrio.<br>
+                    <strong>Natación:</strong> ejercita todo el cuerpo sin someter a las articulaciones a grandes tensiones.<br>
+                    <strong>Fútbol:</strong> mantiene la motivación, fomenta la confianza en el equipo y permite socializar.
+                </div>
+            </div>
+            <div class="llave">
+                <svg width="26" height="100%" preserveAspectRatio="none" viewBox="0 0 26 100">
+                    <path d="M3 2 C 16 2 16 43 23 50 C 16 57 16 98 3 98" stroke="#2d3436" stroke-width="2.5" fill="none"/>
+                </svg>
+            </div>
+            <div class="blob ejemplos" style="background:#cdeeff;">
+                <span class="label lbl-oro">Ejemplos</span>
+                Caminar 30 min, andar en bicicleta, nadar, jugar un partido de fútbol con amigos.
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="row">
+            <div class="blob idea cielo">
+                3. Control: Relajación y Respiración
+                <small>Técnicas para calmar el cuerpo y controlar el esfuerzo.</small>
+            </div>
+            <div class="llave">
+                <svg width="26" height="100%" preserveAspectRatio="none" viewBox="0 0 26 100">
+                    <path d="M3 2 C 16 2 16 43 23 50 C 16 57 16 98 3 98" stroke="#2d3436" stroke-width="2.5" fill="none"/>
+                </svg>
+            </div>
+            <div class="detalle">
+                <div class="blob mini" style="background:#e8d5ff;">
+                    <span class="label lbl-rosa">Definición</span>
+                    La RMP (Relajación Muscular Progresiva) consigue relajación general y autorregulación mediante la tensión y la distensión de grupos musculares.
+                </div>
+                <div class="blob mini" style="background:#ffd6e7;">
+                    <span class="label lbl-lila">Características</span>
+                    <strong>Secuencia / Tensión:</strong> debe ser ordenada y constante. Tensar el músculo por 2 segundos y mantenerlo relajado 15 segundos.<br>
+                    <strong>Respiración Deportiva:</strong> en la musculación, espirar en el momento del esfuerzo e inspirar en la relajación/recuperación.
+                </div>
+            </div>
+            <div class="llave">
+                <svg width="26" height="100%" preserveAspectRatio="none" viewBox="0 0 26 100">
+                    <path d="M3 2 C 16 2 16 43 23 50 C 16 57 16 98 3 98" stroke="#2d3436" stroke-width="2.5" fill="none"/>
+                </svg>
+            </div>
+            <div class="blob ejemplos" style="background:#d9f7e3;">
+                <span class="label lbl-oro">Ejemplos</span>
+                Tensar brazos 2 s y soltar 15 s. Inspirar al preparar el levantamiento y espirar al empujar.
+            </div>
+        </div>
+
+    </div><!-- /rows -->
+</div><!-- /page -->
+
+</body>
+</html>
